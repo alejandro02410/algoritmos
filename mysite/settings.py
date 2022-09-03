@@ -29,7 +29,8 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
-
+#la parte mas modificada, es un archivo de configuracion
+#si modificas algo y no lo pnes en este apartado no se modifica nada 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    #'blog',
+    'prueba2',
+    'prueba3',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +56,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
+#Les decimos donde estaran nuestros hmtl 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -104,9 +109,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'es-es'
+#es-mx
+LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = True
 

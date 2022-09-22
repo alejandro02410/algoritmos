@@ -4,4 +4,6 @@ from django.shortcuts import render
 
 
 def endNum(request):
+    consulta = endNum.objects.all()
+    contexto = {'datos ': consulta}
     return render(request, 'prueba2/index.html',)

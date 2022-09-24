@@ -14,6 +14,3 @@ def muestra_datos(request):
     #    listaSuma.append(r)
     #return listaSuma
 
-# Create your views here.
-
-

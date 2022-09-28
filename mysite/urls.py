@@ -6,6 +6,6 @@ from django.contrib import admin
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    path('', include('prueba2.urls')),
+    path('',include('prueba2.urls')),
 
 ]
